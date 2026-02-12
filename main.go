@@ -29,7 +29,7 @@ func main() {
 		} else if pilihan == 3 {
 			fmt.Printf("Konversi suhu %.1f celcius ke fahrenheit adalah %.1f \n", temp, (temp * 4 / 5))
 		} else if pilihan == 0 {
-			fmt.Println("Pilihan tidak ada !")
+			fmt.Println("Terima kasih program akan ditutup !")
 			os.Exit(0)
 		} else {
 			panic("Pilihan tidak ada !")
