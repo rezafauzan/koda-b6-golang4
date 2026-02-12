@@ -26,9 +26,9 @@ func main() {
 		if pilihan == 1 {
 			fmt.Printf("Konversi suhu %.1f celcius ke fahrenheit adalah %.1f \n", temp, ((temp * 9 / 5) + 32))
 		} else if pilihan == 2 {
-			fmt.Printf("Konversi suhu %.1f celcius ke fahrenheit adalah %.1f \n", temp, (temp + 273.15))
+			fmt.Printf("Konversi suhu %.1f celcius ke kelvin adalah %.1f \n", temp, (temp + 273.15))
 		} else if pilihan == 3 {
-			fmt.Printf("Konversi suhu %.1f celcius ke fahrenheit adalah %.1f \n", temp, (temp * 4 / 5))
+			fmt.Printf("Konversi suhu %.1f celcius ke reamur adalah %.1f \n", temp, (temp * 4 / 5))
 		} else if pilihan == 0 {
 			fmt.Println("Terima kasih program akan ditutup !")
 			os.Exit(0)
