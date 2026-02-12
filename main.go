@@ -6,9 +6,10 @@ import (
 )
 
 func main() {
-	defer func (){
-		if r:= recover(); r != nil{
+	defer func() {
+		if r := recover(); r != nil {
 			fmt.Printf("Error : %s", r)
+			fmt.Println("Terima kasih program akan ditutup !")
 			os.Exit(0)
 		}
 	}()
@@ -32,7 +33,19 @@ func main() {
 			fmt.Println("Terima kasih program akan ditutup !")
 			os.Exit(0)
 		} else {
-			panic("Pilihan tidak ada !")
+			var pilihan int
+			fmt.Println("Pilihan tidak ada !")
+			fmt.Println("1.Kembali ke input")
+			fmt.Println("2.Akhiri Program")
+			fmt.Scanln(&pilihan)
+			if pilihan == 1 {
+				fmt.Println("Kembali ke input")
+			} else if pilihan == 2 {
+				fmt.Println("Terima kasih program akan ditutup !")
+				os.Exit(0)
+			} else {
+				panic("Pilihan tidak ada !")
+			}
 		}
 	}
 }
