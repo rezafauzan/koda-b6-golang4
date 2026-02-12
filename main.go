@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var temp int
+	var temp float64
 	for true {
 		var pilihan int
 		fmt.Println("Masukan suhu dalam bentuk celcius")
@@ -14,7 +14,13 @@ func main() {
 		fmt.Println("0.Konversi ke reamur")
 		fmt.Scanln(&pilihan)
 		if(pilihan == 1){
-			fmt.Printf("Konversi suhu %d celcius ke fahrenheit adalah %d", temp, ((temp * 9/5)))
+			fmt.Printf("Konversi suhu %.1f celcius ke fahrenheit adalah %.1f", temp, ((temp * 9/5) + 32))
+		}
+		if(pilihan == 2){
+			fmt.Printf("Konversi suhu %.1f celcius ke fahrenheit adalah %.1f", temp, (temp + 273.15) )
+		}
+		if(pilihan == 1){
+			fmt.Printf("Konversi suhu %.1f celcius ke fahrenheit adalah %.1f", temp, (temp * 4/5))
 		}
 	}
 }
