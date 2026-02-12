@@ -13,5 +13,8 @@ func main() {
 		fmt.Println("3.Konversi ke reamur")
 		fmt.Println("0.Konversi ke reamur")
 		fmt.Scanln(&pilihan)
+		if(pilihan == 1){
+			fmt.Printf("Konversi suhu %d celcius ke fahrenheit adalah %d", temp, ((temp * 9/5)))
+		}
 	}
 }
